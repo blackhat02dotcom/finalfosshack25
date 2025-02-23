@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My College Life</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Key Features</h1>
+        <button id="theme-toggle">Toggle Theme</button>
+
+        <div class="grid">
+            <div class="section" onclick="window.open('https://travel-guide-d5d35a.zapier.app/', '_blank')">
+                <span class="emoji">🌍</span>
+                <h2>AI Travel Agent</h2>
+                <p>Plan your trips effortlessly with personalized recommendations.</p>
+            </div>
+
+            <div class="section" id="finance-tracker" onclick="openFinanceSection()">
+                <span class="emoji">💰</span>
+                <h2>Finance Tracker</h2>
+                <p>Manage your finances smartly.</p>
+            </div>
+
+            <div class="section" id="portfolio-builder" onclick="window.open('https://acadfolio.zapier.app/', '_blank')">
+                <span class="emoji">📚</span>
+                <h2>Portfolio Builder</h2>
+                <p>Showcase your skills & projects.</p>
+            </div>
+        </div>
+
+        <div id="finance-section" class="hidden">
+            <h2>Finance Planning</h2>
+            <label for="monthly-budget">Enter Your Monthly Budget (₹):</label>
+            <input type="number" id="monthly-budget" placeholder="e.g., 5000">
+            <br><br>
+            <label for="monthly-expenses">Enter Your Monthly Expenses (₹):</label>
+            <input type="number" id="monthly-expenses" placeholder="e.g., 3000">
+            <br><br>
+            <button onclick="calculateSavings()">Calculate Savings</button>
+            <div id="finance-tips" class="hidden"></div>
+        </div>
+    </div>
+
+    <footer>&copy; 2024 My College Life. All rights reserved.</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
